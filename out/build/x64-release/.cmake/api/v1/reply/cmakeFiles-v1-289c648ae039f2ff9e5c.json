@@ -6,7 +6,16 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-release/CMakeFiles/3.25.1-msvc1/CMakeSystem.cmake"
+			"path" : "out/build/x64-Release/CMakeFiles/3.25.1-msvc1/CMakeSystem.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "C:/src/vcpkg/scripts/buildsystems/vcpkg.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeDependentOption.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -15,11 +24,11 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-release/CMakeFiles/3.25.1-msvc1/CMakeCCompiler.cmake"
+			"path" : "out/build/x64-Release/CMakeFiles/3.25.1-msvc1/CMakeCCompiler.cmake"
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-release/CMakeFiles/3.25.1-msvc1/CMakeCXXCompiler.cmake"
+			"path" : "out/build/x64-Release/CMakeFiles/3.25.1-msvc1/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -83,7 +92,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "out/build/x64-release/CMakeFiles/3.25.1-msvc1/CMakeRCCompiler.cmake"
+			"path" : "out/build/x64-Release/CMakeFiles/3.25.1-msvc1/CMakeRCCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -136,13 +145,16 @@
 			"path" : "C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake"
 		},
 		{
+			"path" : "vcpkg.json"
+		},
+		{
 			"path" : "Hardware-Monitor/CMakeLists.txt"
 		}
 	],
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-release",
+		"build" : "C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release",
 		"source" : "C:/Users/danie/source/repos/Hardware-Monitor"
 	},
 	"version" : 

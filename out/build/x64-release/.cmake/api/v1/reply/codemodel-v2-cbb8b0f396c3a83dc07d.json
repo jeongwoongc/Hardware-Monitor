@@ -10,7 +10,7 @@
 					[
 						1
 					],
-					"jsonFile" : "directory-.-Release-d0094a50bb2071803777.json",
+					"jsonFile" : "directory-.-RelWithDebInfo-d0094a50bb2071803777.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -20,7 +20,7 @@
 				},
 				{
 					"build" : "Hardware-Monitor",
-					"jsonFile" : "directory-Hardware-Monitor-Release-4b288d729ba6db252e57.json",
+					"jsonFile" : "directory-Hardware-Monitor-RelWithDebInfo-4b288d729ba6db252e57.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.8"
@@ -34,7 +34,7 @@
 					]
 				}
 			],
-			"name" : "Release",
+			"name" : "RelWithDebInfo",
 			"projects" : 
 			[
 				{
@@ -55,7 +55,7 @@
 				{
 					"directoryIndex" : 1,
 					"id" : "Hardware-Monitor::@e91ff9b17a5b511e31f9",
-					"jsonFile" : "target-Hardware-Monitor-Release-aaba2740190818e7bf6e.json",
+					"jsonFile" : "target-Hardware-Monitor-RelWithDebInfo-a9b13e94d31622298ff9.json",
 					"name" : "Hardware-Monitor",
 					"projectIndex" : 0
 				}
@@ -65,7 +65,7 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-release",
+		"build" : "C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release",
 		"source" : "C:/Users/danie/source/repos/Hardware-Monitor"
 	},
 	"version" : 

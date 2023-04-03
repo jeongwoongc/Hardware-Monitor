@@ -42,7 +42,7 @@ void initMEM() {
     std::cout << "Total Physical Memory available: " << std::setprecision(3) << (physicalMemAvail / DIV) / DIVGB << "GB" << '\n';
     std::cout << "Total Physical Memory Used: " << std::setprecision(3) << (physicalMemUsed / DIV) / DIVGB << "GB" << '\n';
     sleep_for(0.5s);
-}
+} 
 
 int main()
 {

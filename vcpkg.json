@@ -1,5 +1,5 @@
 {
-  "name": "HardwareMonitor",
-  "version-string": "0",
-  "dependencies": ["pdh"]
+  "name": "hardwaremonitor1",
+  "version-string": "version1",
+  "dependencies": []
 }
