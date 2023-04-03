@@ -1,0 +1,5 @@
+{
+  "name": "HardwareMonitor",
+  "version-string": "0",
+  "dependencies": ["pdh"]
+}
