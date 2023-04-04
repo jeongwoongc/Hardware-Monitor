@@ -1,3 +1,2 @@
 .vs/
-CMakePresets.json/
-CMakeSettings.json/
+out/
