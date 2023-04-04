@@ -49,7 +49,7 @@
 			{
 				"command" : 3,
 				"file" : 1,
-				"line" : 10,
+				"line" : 11,
 				"parent" : 0
 			}
 		]
@@ -126,7 +126,9 @@
 			"name" : "Header Files",
 			"sourceIndexes" : 
 			[
-				1
+				1,
+				2,
+				3
 			]
 		}
 	],
@@ -140,7 +142,17 @@
 		},
 		{
 			"backtrace" : 2,
-			"path" : "Hardware-Monitor/Hardware-Monitor.h",
+			"path" : "Hardware-Monitor/CpuMonitor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Hardware-Monitor/MemoryMonitor.h",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 2,
+			"path" : "Hardware-Monitor/DisplayWindow.h",
 			"sourceGroupIndex" : 1
 		}
 	],

@@ -48,18 +48,18 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 The CXX compiler identification is MSVC, found in "C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/CMakeFiles/3.25.1-msvc1/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/CMakeFiles/CMakeScratch/TryCompile-v24k7p
+Change Dir: C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/CMakeFiles/CMakeScratch/TryCompile-ay2v2q
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_57cf4 && [1/2] Building C object CMakeFiles\cmTC_57cf4.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_57cf4.exe
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_722c1 && [1/2] Building C object CMakeFiles\cmTC_722c1.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_722c1.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/CMakeFiles/CMakeScratch/TryCompile-v66nkv
+Change Dir: C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/CMakeFiles/CMakeScratch/TryCompile-q6obxp
 
-Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_17b74 && [1/2] Building CXX object CMakeFiles\cmTC_17b74.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_17b74.exe
+Run Build Command(s):C:/Program Files/Microsoft Visual Studio/2022/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_3d0da && [1/2] Building CXX object CMakeFiles\cmTC_3d0da.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_3d0da.exe
 
 
 
