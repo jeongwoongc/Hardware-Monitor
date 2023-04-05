@@ -37,7 +37,7 @@ int main()
         cpr.showCpu(cpu.getCurrentValue());
 
         // Line skipper, modify to keep more lines 
-        std::cout << "\033[3A";
+        std::cout << "\033[2A";
     }
     
     return 0;
