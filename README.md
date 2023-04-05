@@ -9,7 +9,7 @@ Current Features:
 
 Image of features:
 
-![image](https://user-images.githubusercontent.com/30781868/230232729-993e409b-007a-4580-9fa6-ee1d588d73e3.png)
+![image](https://user-images.githubusercontent.com/30781868/230232930-63eff48b-8552-4b8d-9072-14e9db58294f.png)
 
 *Future Features to add:*
 
