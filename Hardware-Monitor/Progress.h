@@ -26,6 +26,7 @@ public:
         std::cout << std::fixed;
         std::cout << std::setprecision(2);
         std::cout << "] " << virtmemused << " / " << virtmemavail << " gb \b" << '\r';
+        fflush(stdout);
 
     }
     void showPhysicalMem() {
@@ -48,6 +49,7 @@ public:
         std::cout << std::fixed;
         std::cout << std::setprecision(2);
         std::cout << "] " << physmemused << " / " << tot << " gb \b" << '\r';
+        fflush(stdout);
         
     }
     

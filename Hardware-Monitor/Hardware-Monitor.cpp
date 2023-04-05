@@ -34,10 +34,10 @@ int main()
 
         // Load up cpu display
         Loader(load);
-        cpr.showCpu(cpu.getCurrentValue());
+        cpr.showCpu(cpu.getCurrentValue()); 
 
         // Line skipper, modify to keep more lines 
-        std::cout << "\033[2A";
+        std::cout << "\033[3A";
     }
     
     return 0;
