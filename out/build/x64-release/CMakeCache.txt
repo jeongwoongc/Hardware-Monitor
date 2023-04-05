@@ -14,6 +14,30 @@
 # EXTERNAL cache entries
 ########################
 
+//Boost chrono library (debug)
+Boost_CHRONO_LIBRARY_DEBUG:FILEPATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/debug/lib/boost_chrono-vc140-mt-gd.lib
+
+//Boost chrono library (release)
+Boost_CHRONO_LIBRARY_RELEASE:FILEPATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/lib/boost_chrono-vc140-mt.lib
+
+//The directory containing a CMake configuration file for Boost.
+Boost_DIR:PATH=C:/msys64/mingw64/lib/cmake/Boost-1.81.0
+
+//Path to a file.
+Boost_INCLUDE_DIR:PATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/include
+
+//Boost library directory DEBUG
+Boost_LIBRARY_DIR_DEBUG:PATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/debug/lib
+
+//Boost library directory RELEASE
+Boost_LIBRARY_DIR_RELEASE:PATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/lib
+
+//Boost timer library (debug)
+Boost_TIMER_LIBRARY_DEBUG:FILEPATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/debug/lib/boost_timer-vc140-mt-gd.lib
+
+//Boost timer library (release)
+Boost_TIMER_LIBRARY_RELEASE:FILEPATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/lib/boost_timer-vc140-mt.lib
+
 //Path to a program.
 CMAKE_AR:FILEPATH=C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.35.32215/bin/Hostx64/x64/lib.exe
 
@@ -278,11 +302,36 @@ Z_VCPKG_PWSH_PATH:FILEPATH=Z_VCPKG_PWSH_PATH-NOTFOUND
 // triplet
 _VCPKG_INSTALLED_DIR:PATH=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed
 
+//The directory containing a CMake configuration file for boost_chrono.
+boost_chrono_DIR:PATH=C:/msys64/mingw64/lib/cmake/boost_chrono-1.81.0
+
+//The directory containing a CMake configuration file for boost_headers.
+boost_headers_DIR:PATH=C:/msys64/mingw64/lib/cmake/boost_headers-1.81.0
+
+//The directory containing a CMake configuration file for boost_timer.
+boost_timer_DIR:PATH=C:/msys64/mingw64/lib/cmake/boost_timer-1.81.0
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
+//ADVANCED property for variable: Boost_CHRONO_LIBRARY_DEBUG
+Boost_CHRONO_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_CHRONO_LIBRARY_RELEASE
+Boost_CHRONO_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_DIR
+Boost_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_INCLUDE_DIR
+Boost_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_DEBUG
+Boost_LIBRARY_DIR_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_LIBRARY_DIR_RELEASE
+Boost_LIBRARY_DIR_RELEASE-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_TIMER_LIBRARY_DEBUG
+Boost_TIMER_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: Boost_TIMER_LIBRARY_RELEASE
+Boost_TIMER_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
 CMAKE_AR-ADVANCED:INTERNAL=1
 //This is the directory where this CMakeCache.txt was created
@@ -417,6 +466,8 @@ CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 CMAKE_TOOLCHAIN_FILE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding Boost
+FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[C:/msys64/mingw64/lib/cmake/Boost-1.81.0/BoostConfig.cmake][cfound components: timer ][v1.81.0()]
 //ADVANCED property for variable: VCPKG_VERBOSE
 VCPKG_VERBOSE-ADVANCED:INTERNAL=1
 //Making sure VCPKG_MANIFEST_MODE doesn't change
@@ -425,4 +476,26 @@ Z_VCPKG_CHECK_MANIFEST_MODE:INTERNAL=ON
 Z_VCPKG_POWERSHELL_PATH:INTERNAL=C:/Windows/System32/WindowsPowerShell/v1.0/powershell.exe
 //Vcpkg root directory
 Z_VCPKG_ROOT_DIR:INTERNAL=C:/src/vcpkg
+//Last used Boost_COMPILER value.
+_Boost_COMPILER_LAST:INTERNAL=-vc140
+//Components requested for this build tree.
+_Boost_COMPONENTS_SEARCHED:INTERNAL=chrono;timer
+//Last used Boost_INCLUDE_DIR value.
+_Boost_INCLUDE_DIR_LAST:INTERNAL=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/include
+//Last used Boost_LIBRARY_DIR_DEBUG value.
+_Boost_LIBRARY_DIR_DEBUG_LAST:INTERNAL=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/debug/lib
+//Last used Boost_LIBRARY_DIR_RELEASE value.
+_Boost_LIBRARY_DIR_RELEASE_LAST:INTERNAL=C:/Users/danie/source/repos/Hardware-Monitor/out/build/x64-Release/vcpkg_installed/x64-windows/lib
+//Last used Boost_NAMESPACE value.
+_Boost_NAMESPACE_LAST:INTERNAL=boost
+//Last used Boost_USE_MULTITHREADED value.
+_Boost_USE_MULTITHREADED_LAST:INTERNAL=ON
+//Last used Boost_USE_STATIC_LIBS value.
+_Boost_USE_STATIC_LIBS_LAST:INTERNAL=OFF
+//ADVANCED property for variable: boost_chrono_DIR
+boost_chrono_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_headers_DIR
+boost_headers_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: boost_timer_DIR
+boost_timer_DIR-ADVANCED:INTERNAL=1
 

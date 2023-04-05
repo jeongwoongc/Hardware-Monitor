@@ -1,10 +1,9 @@
-﻿// Hardware-Monitor.h : Header file for initiating performance data helper queries/windows
+﻿// CpuMonitor.h : Header file for initiating performance data helper queries for CPU
 
 #pragma once
 
 #include <Pdh.h>
 #include <PdhMsg.h>
-
 
 static PDH_HQUERY cpuQuery;
 static PDH_HCOUNTER cpuTotal;
@@ -22,7 +21,6 @@ public:
 
     double getCurrentValue() {
         initCPU();
-        Sleep(500);
         PDH_FMT_COUNTERVALUE counterVal;
         PdhCollectQueryData(cpuQuery);
         PdhGetFormattedCounterValue(cpuTotal, PDH_FMT_DOUBLE, NULL, &counterVal);

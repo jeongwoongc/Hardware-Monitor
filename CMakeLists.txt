@@ -10,6 +10,6 @@ if (POLICY CMP0141)
 endif()
 
 project ("Hardware-Monitor")
-
+ 
 # Include sub-projects.
 add_subdirectory ("Hardware-Monitor")

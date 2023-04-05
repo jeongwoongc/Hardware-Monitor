@@ -1,24 +1,70 @@
-﻿#include "CpuMonitor.h"
-#include "MemoryMonitor.h"
+﻿#include "Progress.h"
+#include <cwchar>
 
+void ShowConsoleCursor(bool showFlag);
+void Loader(int &load);
 
-int main() 
+int main()
 {
+    // Loading time in ms
+    int load = 35;
+
+    // Hide console cursor
+    ShowConsoleCursor(false);
+    system("color 0A");
+
+    // Define monitoring process
     CpuMonitor cpu;
-    MemoryMonitor mem;
+
+    // Define progress indicators
+    CpuProgress cpr;
+    MemProgress mpr;
 
     while (true) {
-        double cpuusage = cpu.getCurrentValue();
-        std::cout << "the total vitual memory available is: " << std::setprecision(4) << mem.virtualMemAvail() << '\n';
-        std::cout << "the total vitual memory used is: " << std::setprecision(4) << mem.virtualMemUsed() << '\n';
-        std::cout << "the total physical memory available is: " << std::setprecision(4) << mem.physicalMemAvail() << '\n';
-        std::cout << "the total physical memory used is: " << std::setprecision(4) << mem.physicalMemUsed() << '\n';
-        std::cout << "the total cpu usage: " << cpuusage << "%" << '\n';
+
+        // Load up virtual memory display
+        Loader(load);
+        mpr.showVirtualMem();
+        std::cout << std::endl;
+
+        // Load up physical memory display
+        Loader(load);
+        mpr.showPhysicalMem();
+        std::cout << std::endl;
+
+        // Load up cpu display
+        Loader(load);
+        cpr.showCpu(cpu.getCurrentValue());
+
+        // Line skipper, modify to keep more lines 
+        std::cout << "\033[3A";
     }
+    
+    return 0;
+
 }
 
+void ShowConsoleCursor(bool showFlag)
+{
+    HANDLE out = GetStdHandle(STD_OUTPUT_HANDLE);
 
+    CONSOLE_CURSOR_INFO cursorInfo;
+
+    GetConsoleCursorInfo(out, &cursorInfo);
+    cursorInfo.bVisible = showFlag; // set the cursor visibility
+    SetConsoleCursorInfo(out, &cursorInfo);
+}
+void Loader(int &load)
+{
+    std::cout << '|' << '\r';
+    Sleep(load);
+    std::cout << '/' << '\r';
+    Sleep(load);
+    std::cout << '-' << '\r';
+    Sleep(load);
+    std::cout << '\\' << '\r';
+}
 
 // GPU?
 // disk space?
-// get QT and make a GUI app
+// print it on console as a progress bar

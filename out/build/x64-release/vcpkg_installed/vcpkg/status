@@ -1,0 +1,274 @@
+Package: vcpkg-cmake
+Version: 2022-12-22
+Architecture: x64-windows
+Multi-Arch: same
+Abi: fc28bb7bf3d13793664d9d1868200b0de67a9c6615bfc1c320b07b4d5c514ada
+Status: purge ok not-installed
+
+Package: boost-uninstall
+Version: 1.81.0
+Port-Version: 2
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2a6981ac4f08fd39194119ab4b4a1c354251a7d80347a3afdcf2054f9f741b2f
+Description: Internal vcpkg port used to uninstall Boost
+Status: purge ok not-installed
+
+Package: boost-vcpkg-helpers
+Version: 1.81.0
+Port-Version: 3
+Depends: boost-uninstall
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 2837962a6f61d5c3d1715470103ab964ceb6bc7785ee4e387c43102a0dafc303
+Description: Internal vcpkg port used to modularize Boost
+Status: purge ok not-installed
+
+Package: boost-config
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 4842b4852fd2cf4dde6e5a52c75dc67e010b51b2777e2fa0dc309e52ea0f7d48
+Description: Boost config module
+Status: purge ok not-installed
+
+Package: boost-assert
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 5757c65b231b0f629b904315163724616be5cb5ca969033ee3aeaa52b7da9cd3
+Description: Boost assert module
+Status: purge ok not-installed
+
+Package: boost-throw-exception
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c46051ec023ea2e52038dceb801fdcca50e5e135cfa666d5a50f92451382eb57
+Description: Boost throw_exception module
+Status: purge ok not-installed
+
+Package: boost-predef
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 536fd61028bb40e80b1208a875b9be2d514401974d7aec10c844a00db8113ca3
+Description: Boost predef module
+Status: purge ok not-installed
+
+Package: boost-winapi
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-predef, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d69dd7754f429f0d4db5772db8e11588e5c6265ec220affbedc508172f1841a6
+Description: Boost winapi module
+Status: purge ok not-installed
+
+Package: boost-mp11
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ab18747244f5d2c19d6dad7be58fad0b74574b42edcb5bd27db49ad01409bc3b
+Description: Boost mp11 module
+Status: purge ok not-installed
+
+Package: boost-variant2
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-mp11, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: d65ad4cad859f4fe4f8b6702a4c77fa934ed539590d1ca843489290cf5288bd8
+Description: Boost variant2 module
+Status: purge ok not-installed
+
+Package: vcpkg-cmake-get-vars
+Version: 2023-03-02
+Depends: vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 72792c86bcba6929ef14d6e4dd57a95baf459ab5b1c701bbecaec36e9f2f2bbb
+Status: purge ok not-installed
+
+Package: boost-modular-build-helper
+Version: 1.81.0
+Port-Version: 5
+Depends: boost-uninstall, vcpkg-cmake, vcpkg-cmake-get-vars
+Architecture: x64-windows
+Multi-Arch: same
+Abi: dae8372e9b37e0ff7f46a637cc2743c9734b16e37381f39804017ae861bd96d6
+Description: Internal vcpkg port used to build Boost libraries
+Status: purge ok not-installed
+
+Package: boost-build
+Version: 1.81.0
+Port-Version: 3
+Depends: boost-uninstall
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 067fd59d789061698e590ee4e407f97698338e007ee48220231c345933096a2c
+Description: Boost.Build
+Status: purge ok not-installed
+
+Package: boost-system
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-build, boost-config, boost-modular-build-helper, boost-throw-exception, boost-variant2, boost-vcpkg-helpers, boost-winapi, vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: a8aca16704e600538a07e4df4c73bfba0684af32606b1e39339441f0c666c732
+Description: Boost system module
+Status: purge ok not-installed
+
+Package: boost-io
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6a60095366665cd5904904cf1ab6c88bc267cf441788290b9f3788a84933f4a7
+Description: Boost io module
+Status: purge ok not-installed
+
+Package: boost-static-assert
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: c8192ce697931d712aab36e3e7174777f87be4e6182071fa7f8705317a4f3083
+Description: Boost static_assert module
+Status: purge ok not-installed
+
+Package: boost-core
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-static-assert, boost-throw-exception, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 44fb4c64ee68c491c8472f98470ad9406798934503d86ceac97827fd977dc908
+Description: Boost core module
+Status: purge ok not-installed
+
+Package: boost-type-traits
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-static-assert, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 6dc48462cdee7e46aa4a5247efedf1410604223b0e36c7bb1fde2b11533cf81f
+Description: Boost type_traits module
+Status: purge ok not-installed
+
+Package: boost-preprocessor
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: f85a11df0a19210633f6e41ef1c9bfb3cabf705aed58e390468f1a7c30dba455
+Description: Boost preprocessor module
+Status: purge ok not-installed
+
+Package: boost-utility
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-core, boost-io, boost-preprocessor, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 27e0921cde599f7f6daeed24da2af3498dff76110668f7a3776b665d55bdd2b9
+Description: Boost utility module
+Status: purge ok not-installed
+
+Package: boost-typeof
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-preprocessor, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: ab36b5e42f9c41a03d433c20df881b1c0f83665f551eba71165e5d3efb14246a
+Description: Boost typeof module
+Status: purge ok not-installed
+
+Package: boost-integer
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-throw-exception, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 0dbcfc879c982bb87f2a074feb524931fe2718131b42915a4155a28631563f21
+Description: Boost integer module
+Status: purge ok not-installed
+
+Package: boost-rational
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-core, boost-integer, boost-static-assert, boost-throw-exception, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 12614042bb5672e1db1cc6adade86f3928d70daee4fdc396d6a915f3eb191f69
+Description: Boost rational module
+Status: purge ok not-installed
+
+Package: boost-mpl
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-core, boost-predef, boost-preprocessor, boost-static-assert, boost-type-traits, boost-utility, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 7af4fef5371759ab48d8d3115c559f56582bb724a1bd0a3ae8d944ec3427d9f3
+Description: Boost mpl module
+Status: purge ok not-installed
+
+Package: boost-ratio
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-config, boost-core, boost-integer, boost-mpl, boost-rational, boost-static-assert, boost-type-traits, boost-vcpkg-helpers
+Architecture: x64-windows
+Multi-Arch: same
+Abi: e1052306e7f201c18875897ab9323dc4ebc0536857d6443b4d951e43dcb08aa2
+Description: Boost ratio module
+Status: purge ok not-installed
+
+Package: boost-move
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-config, boost-core, boost-static-assert, boost-vcpkg-helpers, boost-winapi
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 01693743c72a9bcf225f3bb1725ec4bcbe29f921a1825a962514e62c167c525d
+Description: Boost move module
+Status: purge ok not-installed
+
+Package: boost-chrono
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-assert, boost-build, boost-config, boost-core, boost-integer, boost-modular-build-helper, boost-move, boost-mpl, boost-predef, boost-ratio, boost-static-assert, boost-system, boost-throw-exception, boost-type-traits, boost-typeof, boost-utility, boost-vcpkg-helpers, boost-winapi, vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: 1e04405d2542e9efbf32f7fb4bd2531a3d2d5c953779a9f398c02cb4e250d654
+Description: Boost chrono module
+Status: purge ok not-installed
+
+Package: boost-timer
+Version: 1.81.0
+Port-Version: 2
+Depends: boost-build, boost-chrono, boost-config, boost-core, boost-io, boost-modular-build-helper, boost-predef, boost-system, boost-throw-exception, boost-vcpkg-helpers, vcpkg-cmake
+Architecture: x64-windows
+Multi-Arch: same
+Abi: cceae691ba6fc4a970c0467eb18195e5dcf2594455b44d8bfb826a13097e6da1
+Description: Boost timer module
+Status: purge ok not-installed
+
