@@ -7,7 +7,7 @@ Current Features:
 2. Physical Memory Display `committed / total`
 3. CPU Usage Display `percentage`
 
-Image of features:
+Image of Features:
 
 ![image](https://user-images.githubusercontent.com/30781868/230232930-63eff48b-8552-4b8d-9072-14e9db58294f.png)
 
