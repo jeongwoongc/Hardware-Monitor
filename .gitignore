@@ -45,5 +45,5 @@ compile_commands.json
 CTestTestfile.cmake
 _deps
 
-out/build
+out/build/
 [Bb][Uu][Ii][Ll][Dd]/
